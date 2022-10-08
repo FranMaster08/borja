@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "fran",
+    "password": "1234",
+    "database": "borja",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "port": "3309"
+  },
+  "test": {
+    "username": "fran",
+    "password": "1234",
+    "database": "borja",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "fran",
+    "password": "1234",
+    "database": "borja",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

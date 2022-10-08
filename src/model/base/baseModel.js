@@ -1,17 +1,25 @@
 class baseModel {
-  database = "";
-  constructor(database) {
-    this.database = database;
+  table = "";
+  constructor(table) {
+    this.table = table;
   }
   async create(entity) {
     try {
-        this.database.create()
+      const datos = await this.table.create(entity);
+      console.log(datos);
     } catch (error) {
-        
+      console.log(error);
     }
   }
-  async update(id, entity) {}
-  async delete(id) {}
-  async findAll() {}
-  async findOne(id) {}
+
+  async findAll() {
+    try {
+      const datos = await this.table.findAll();
+      console.log(datos);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 }
+
+module.exports = baseModel
