@@ -1,19 +1,12 @@
 const db = require("../database/models");
-const BaseModel = require("./base/baseModel")
+const BaseModel = require("./base/baseModel");
 
 class userModel extends BaseModel {
-    constructor(db){
-        super(db.usuarios)
-    }
+  constructor(db) {
+    super(db.usuarios);
+  }
 }
-const usuarios = new userModel(db);
-usuarios.findAll().then(console.log).catch(console.error)
-
-
-
-
-
-
+module.exports = new userModel(db);
 
 // const findAll = async () => {
 //   try {
@@ -32,4 +25,3 @@ usuarios.findAll().then(console.log).catch(console.error)
 //     console.log(error);
 //   }
 // };
-

@@ -14,12 +14,11 @@ class baseModel {
 
   async findAll() {
     try {
-      const datos = await this.table.findAll();
-      console.log(datos);
+      return await this.table.findAll();
     } catch (error) {
       console.log(error);
     }
   }
 }
 
-module.exports = baseModel
+module.exports = baseModel;
