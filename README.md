@@ -13,7 +13,8 @@ Este proyecto es dedicado a nuestro profe.
 
 ### Data base in local directory
 
-``` services:
+```
+ services:
   borja:
     image: mysql:5.7
     environment:
